@@ -1,0 +1,25 @@
+version: '3'
+services:
+    app:
+        container_name: node-mysql
+        build: .
+        ports: 
+            - "8080:3000"
+        links: 
+            - mysql-host
+        depends_on:
+            - mysql-host
+        restart: always
+        command: npm start
+
+    mysql-host:
+        container_name: mysql-container
+        image: mysql:8.0.2
+        volumes:
+            - ./mysql:/docker-entrypoint-initdb.d
+        environment: 
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: node_mysql
+        ports:
+            - "3306:3306"    
+

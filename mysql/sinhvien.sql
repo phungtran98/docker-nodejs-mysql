@@ -1,0 +1,11 @@
+CREATE TABLE sinhvien( sv_id INT AUTO_INCREMENT primary key, masv VARCHAR(100) ,tensv VARCHAR(100) ,tuoi VARCHAR(200));
+INSERT INTO sinhvien(masv,tensv,tuoi) VALUES ("Tran Thanh Phung","B123456","22");
+INSERT INTO sinhvien(masv,tensv,tuoi) VALUES ("Le Ngoc Duc","B123456","23");
+INSERT INTO sinhvien(masv,tensv,tuoi) VALUES ("Le Ngoc A","B123456","23");
+INSERT INTO sinhvien(masv,tensv,tuoi) VALUES ("Le Ngoc B","B123456","23");
+INSERT INTO sinhvien(masv,tensv,tuoi) VALUES ("Le Ngoc C","B123456","23");
+INSERT INTO sinhvien(masv,tensv,tuoi) VALUES ("Le Ngoc D","B123456","23");
+INSERT INTO sinhvien(masv,tensv,tuoi) VALUES ("Le Minh Nghia","B123222","25");
+INSERT INTO sinhvien(masv,tensv,tuoi) VALUES ("Le Minh AB","B123333","26");
+INSERT INTO sinhvien(masv,tensv,tuoi) VALUES ("Le Minh AN","B123555","21");
+INSERT INTO sinhvien(masv,tensv,tuoi) VALUES ("Le Minh Bao","B123556","18");
